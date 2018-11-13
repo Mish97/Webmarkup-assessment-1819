@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+/* body style */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+body{	
+	text-transform: uppercase;	
+	max-width: 100%;
+	background-image: url(../img/background.jpeg);
+	background-size: contain;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+img {
+	display: block;
+}
+.main {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* Header style */
+
+.main_header{
+    background-image: url(../img/companylogoBG.jpg);
+	height: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 60px;
+	font-family: 'Acme';
+	text-shadow: -3px 0 #000000, 0 3px #000000,
+				 3px 0 #000000, 0 -3px #000000;
+}
+.main_header img{
+	width: 100%;
+	height: auto;
+}
+
+/* Articles style */
+
+#Homepage_section img{	
+	width: 100%;
+	height: auto;
+}
+.headers{	
+	background: #2699FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+	width: 100%;
+	color: #ffffff;
+	font-size: 50px;
+	text-align: center;		
+}
+
+/* Navigation style*/
+
+nav {
+	background: #707070;	
+	border: 1px solid #F5F5F5;	
+}
+
+nav ul {
+	display: flex;	
+	flex-direction: row;	
+	list-style-type: none;
+	justify-content: space-between;	
+	padding: 0;
+	margin: 0 auto;
+	max-width: 700px;
+	height: 45px;
+	align-items: center;
+}
+li a {
+	color: #fff;
+	text-decoration: none;
+}
+li a:hover {
+	color: #2699FB;
+}
+
+
+
+/* footer design */
+footer{
+	background-color: #000000;
+	display: flex;
+    justify-content: center;
+	height: 48px;	
+	border: 1px solid #F5F5F5;
+	line-height: 48px;
+}
+p{
+	color: #ffffff;
+	text-transform: initial;
+	text-align: center;
+	font-size: 27.2px;	
+}
+aside{
+	display: none;
+  }
+
+@media screen and (min-width: 500px) {
+	h1 {
+		color: white;
+	}
+}
