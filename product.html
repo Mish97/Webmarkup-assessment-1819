@@ -1,22 +1,22 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
  
  	<!--Head [Google and browser]-->
- <head>
+<head>
 	<meta charset="utf-8">
-	<meta name = "keywors" content = "mobile games, board games, console games, entertainment, game, games, console, board"/>
-	<meta name = "description" content = "Product page" />
-    <meta name = "author" content = "Mihaela Yordanova" />
-    
+	<meta name = "keywors" content = "mobile games, board games, console games, entertainment, game, games, console, board">
+	<meta name = "description" content = "Product page" >
+    <meta name = "author" content = "Mihaela Yordanova" >  
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">  
     
 	
-	
-<link 
-	rel="stylesheet" 
-	type="text/css" 
-    href="css/style.css">
+        <!--Link for css stylesheet-->
+    <link 
+	    rel="stylesheet" 
+	    type="text/css" 
+        href="css/style.css">
     
-    <!--favicon-->
+        <!--favicon-->
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -35,50 +35,52 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="img/favicon/favicon.ico">
+    
 
 	<title> we are entertainment </title> 
-	</head>	
+</head>	
 	
-	<!--Body [for the user and robots]-->
+	    <!--Body [for the user and robots]-->
 	<body>
-		<video autoplay loop src = "../assets/movie/background.mp4" ></video>
+		<video autoplay muted loop src = "../assets/movie/background.mp4" ></video>
 		<section class="main_section">
 			<header>
 				<h1 class="main_header"> company name </h1>							  
             </header>
-            <nav>                 
-                <ul> 
-                    <li> <a href="index.html" > <strong>home</strong> </a> </li>				
-                    <li> <a href= "http://www.blogger.com" > <strong>blog </strong></a>	</li>			
-                    <li> <a href= "contact.html" > <strong>contact</strong></a> </li>		
-                </ul>	
-            </nav>
+            <nav> 
+					<!--Hamburger menu icon-->
+					<label for="toggle">&#9776;</label>
+					<input type ="checkbox" id="toggle"/>						
+					<ul class="menu"> 
+						<li> <a href="index.html" > <strong>home</strong> </a> </li>				
+						<li> <a href= "http://www.blogger.com" > <strong>blog </strong></a>	</li>			
+						<li> <a href= "contact.html" > <strong>contact</strong></a> </li>							
+					</ul>						
+			</nav>
             <section>
                 <article>
-                    <h2 class="product_header"> product catalog</h2>                       
+                    <h2 class="product_header"> product catalog</h2> 
+                    <h2 class = "change_header">products</h2>                      
                 </article>
             </section>	
-            <section id ="gallery">
-                <section id="pics">
-               <img src="../assets/small/product1.jpg" alt="rubic"> 
-                <img src="../assets/small/product2.jpg" alt = "castel">
-                <img src="../assets/small/product3.jpg" alt = "mario">
-                <img src="../assets/small/product4.jpg" alt = "mario">
-                <img src="../assets/small/product5.jpg" alt = "mario">
-                <img src="../assets/small/product6.jpg" alt = "mario">
-                <img src="../assets/small/product7.jpg" alt = "mario">
-                <img src="../assets/small/product8.jpg" alt = "mario">
-                <img src="../assets/small/product9.jpg" alt = "mario">
-                <img src="../assets/small/product10.jpg" alt = "mario">
-                <img src="../assets/small/product11.jpg" alt = "mario">
-                <img src="../assets/small/product12.jpg" alt = "mario">
-                <img src="../assets/small/product13.jpg" alt = "mario">
-                </section>
-        
-            </section>		
+            <section id ="procucts">
+                    <section class="product">
+                            <a href="img/product1.jpg"></a>
+                            <a href="img/product2.jpg"></a>
+                            <a href="img/product3.jpg"></a>
+                            <a href="img/product4.jpg"></a>
+                            <a href="img/product5.jpg"></a>
+                            <a href="img/product6.jpg"></a>
+                            <a href="img/product8.jpg"></a>
+                            <a href="img/product9.jpg"></a>
+                            <a href="img/product10.jpg"></a>
+                            <a href="img/product11.jpg"></a>
+                            <a href="img/product12.jpg"></a>                    
+                        </section>              
+            </section>        
+        </section> 
+        <!--Footer-->               
             <footer>
                 <p> &copy; 2018 - Mihaela Yordanova - Inholland </p>
             </footer>
-
-         </section>
     </body>
