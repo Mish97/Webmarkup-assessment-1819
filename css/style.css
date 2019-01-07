@@ -24,6 +24,13 @@ img {
 .main_section {
 	max-width: 960px;
 	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+#main_section_contact{
+	background-color: #F5F5F5;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 
@@ -53,12 +60,27 @@ img {
 	background-image: url(../img/product3.jpg);
 }
 
+@media only screen and (min-width: 960px)
+{
+
+	#desktop_hidden
+	{
+		display: none;
+	}
+
+}
+
+
 /* video enable */
 
 video {
-	display: initial;
-	position: absolute;
-	max-width: 100%;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	left: 0;
+	top: 0;
+	background-size: 100%;
+	background-position: 100% 100%;
 	z-index: -1;
 }
 
@@ -86,12 +108,10 @@ nav {
 li a:hover {
 	color: #2699FB;
 }
-label{
+.label{
 	margin: 0 40px 0 0;
-	font-size: 26px;
+	font-size: 2em;
 	display: none;
-	width: 25px;
-	float: left;
 	color: #ffffff;
 }
 #toggle{
@@ -127,7 +147,7 @@ label{
 	text-align: center;
 }
 .header_board{
-	
+
 	background: #2699FB;
     display: flex;
     align-items: center;
@@ -140,7 +160,7 @@ label{
 	text-align: center;
 }
 .header_console{
-	
+
 	background: #2699FB;
     display: flex;
     align-items: center;
@@ -168,6 +188,10 @@ label{
 	display: none;
 }
 
+#tablet_pic{
+	display: none;
+}
+
 
 /*contact page*/
 #content{
@@ -184,18 +208,25 @@ h3{
 	text-transform: initial;
 }
 form {
-	margin: 16px 64px;
+	margin: 1em;
 	margin-top: 0;
 	font-size: 32px;
 	overflow: hidden;
 }
+
 fieldset{
-	margin: 16px 0;
+	width: 88%;
+	margin: 1em;
 	padding: 0;
 	background: #fff;
     border: 2px solid #707070;
+}
+
+#lable{
+	font-size: 0.7em;
 
 }
+
 #topic {
 	display: block;
 	padding-left: 16px;
@@ -213,15 +244,22 @@ select{
 	padding-top: 2px;
 }
 .contactFormFieldset{
-	padding-left: 16px;
+	padding-left: 0.1em;
+	padding-top: 0.1em;
 	height: 45px;
 	line-height: 28px;
 }
+.contactFormFieldset input{
+	font-size: 0.95em;
+}
+
+
 #button{
 	background: #2699FB;
 	padding: 7px;
- 	width: 100%;
-  	height: 50px;
+ 	width: 88%;
+  height: 50px;
+	margin-left: 1.3em;
 	margin-bottom: 5%;
 	color: #F5F5F5;
 	justify-content: center;
@@ -231,12 +269,15 @@ select{
 /* footer design */
 
 footer{
-	display: flex;
+
 	justify-content: center;
 	background-color: #000000;
 	height: 48px;
+	width: 100%;
 	border: 1px solid #F5F5F5;
 	line-height: 48px;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 p{
@@ -255,6 +296,7 @@ aside{
 	display: grid;
   	grid-template-columns: auto auto auto;
   	grid-gap: 10px;
+		padding: 1em;
 }
 
 #products img{
@@ -288,25 +330,44 @@ aside{
 	.header_mobile{
 		display: none;
 	}
-	.header{
+
+	#first_two{
+		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 1em;
-		/*tuk se opitvam da napravq grid za snimkite na index za tablet*/
+	}
+
+	#first_two img{
+		width: 96%;
+		height: 20em;
+		margin: 1em;
+	}
+
+	#tablet_hidden{
+		display: none;
 	}
 
 	/*product page*/
 	#products{
 		grid-template-columns: auto auto;
-		grid-gap: 1em;		
+		grid-gap: 1em;
 	}
 	#products img{
-		margin: 5px;		
-		height: 15em;		
+		margin: 5px;
+		height: 15em;
 	}
 	.product_header{
 		display: none;
 	}
-	
+	/* disable video */
+	video{
+		display: none;
+	}
+
+	#board{
+		display: none;
+	}
+
 
 }
 
@@ -322,13 +383,16 @@ aside{
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	label {
+	.label {
 		display: block;
 		cursor: pointer;
+		float: left;
+		width: 2em;
+		height: auto;
+		font-size: 2em;
 	}
 	.menu{
 		width: 100%;
-		text-align: center;
 		display: none;
 	}
 	.menu a{
@@ -385,17 +449,24 @@ aside{
 	}
 	#products{
 		border: 3px solid #F5F5F5;
-		grid-template-columns: auto;				
+		grid-template-columns: auto;
 	}
 	#products img{
 		height: 200px;
 	}
-	
-	
-	
-}	
-  
-	
+
+	#tablet_pic{
+		display: none;
+	}
+
+	#desktop_hidden
+	{
+		display: none;
+	}
+
+}
+
+
 
 
 	/*contact page....
